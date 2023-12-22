@@ -1,0 +1,32 @@
+https://www.figma.com/file/7o32YhXDakTygHv6Uqg0gK/ENVOY-HEALTH-(Copy)?type=design&node-id=0-1&mode=design&t=KgqY3o89denvdTbI-0
+
+
+
+<!-- import React, { useState, useEffect } from "react";
+
+const MyComponent = () => {
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
+
+  useEffect(() => {
+    const isScrolledDown = window.scrollY > 0;
+    setIsButtonVisible(isScrolledDown);
+  }, []);
+
+  const handleButtonClick = () => {
+    window.scrollTo(0, 0);
+  };
+
+  return (
+    <div>
+      <button
+        className="scroll-to-top-button"
+        disabled={isButtonVisible}
+        onClick={handleButtonClick}
+      >
+        Scroll to top
+      </button>
+    </div>
+  );
+};
+
+export default MyComponent; -->

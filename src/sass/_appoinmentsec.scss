@@ -1,0 +1,51 @@
+.appoinmentSection {
+    .sideImg{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            position: relative;
+           width: 100%;
+        }
+    }
+    .imgDiv {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        border-radius: 8px;
+        gap: 10px;
+        
+    }
+    .imgDiv1 {      
+        background-color: $color-1;
+    }
+    .imgDiv2 {      
+        background-color: $color-2;
+    }
+    .imgDiv3 {      
+        background-color: $color-3;
+    }
+   
+}
+
+@media only screen and (max-width:600px){
+    .appoinmentSection{
+        .sideContent{
+            background-color:$reviews-bg ;
+           padding: 30px 10px;
+        }
+        .Box{
+            background-color:$treatmentcardbg ;
+            padding: 10px 2px;
+            border-radius: 10px;
+        }
+        p{
+            margin-left: 40px;
+            font-size: 10px;
+            line-height: 19px;
+        }
+        button{
+            font-size: 15px;
+        }
+    }
+}

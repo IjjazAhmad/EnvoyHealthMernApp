@@ -1,0 +1,22 @@
+.articalSection{
+    background-image: url('../assets/images/articleCard/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30vh;
+    padding-top: 60px;
+    background-color: #fff;
+    .cards-1{
+        .card{
+            background: #fff;
+            .card-image {
+                margin-top: 20px !important;
+            }
+        } 
+    }
+}
+@media screen and (max-width: 600px) {
+    .articalSection{
+        background-image: none;   
+    }
+  }

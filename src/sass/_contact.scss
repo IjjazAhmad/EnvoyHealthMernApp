@@ -1,0 +1,25 @@
+.contact{
+    .contactForm{
+        background-image: url("../assets/images/Earth.png");
+        background-color:$reviews-bg ;
+        .Box{
+            width: 100%;
+            height: 30rem;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            text-align: center;
+            .tickImg{
+          
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+    .treatment{
+        .card{
+            background-color: $reviews-bg;
+        }
+    }
+}

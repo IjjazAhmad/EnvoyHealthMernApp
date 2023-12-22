@@ -1,0 +1,124 @@
+.doctor {
+    .Box{
+       
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        text-align: center;
+        .tickImg{
+      
+            img{
+                width: 100px;
+            }
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border: 5px solid $primary;
+        border-radius: 25px;
+    }
+
+    .Calendar {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+
+        .react-calendar__navigation {
+            background-color: $secondary;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            button {
+                color: $white !important;
+            }
+
+            button:hover {
+                color: $secondary !important;
+            }
+        }
+
+
+        .react-calendar__tile--active {
+            background: $primary;
+            border-radius: 100px;
+            color: white;
+        }
+
+        .react-calendar__tile--active:enabled:hover,
+        .react-calendar__tile--active:enabled:focus {
+            background: $primary;
+            border-radius: 100px;
+
+        }
+    }
+
+    .timeSlot {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+
+        .head {
+            p {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                padding: 10px;
+            }
+        }
+
+        .body {
+            .slotBox {
+                background-color: $primary-light;
+                border-radius: 100px;
+                padding: 5px;
+                margin-bottom: 10px;
+                line-height: 14px;
+                font-size: 16px;
+                margin-left: 19px;
+                border: none;
+            }
+
+            .slotBox:hover {
+                background-color: $secondary;
+                cursor: pointer;
+                color: $white;
+            }
+
+            .active {
+                background-color: $secondary;
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+
+    .info {
+
+        .label {
+            width: 323px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            background-color: $secondary;
+        }
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .doctor {
+        .info {
+    
+            .label {
+                width: 220px;
+                
+            }
+           
+        }
+    }
+}
+

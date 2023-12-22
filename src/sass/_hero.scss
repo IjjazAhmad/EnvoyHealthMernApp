@@ -1,0 +1,394 @@
+main {
+    .heroSection {
+        .bg {
+            position: absolute;
+            z-index: -111;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bg-1 {
+            display: block;
+        }
+
+        .bg-2 {
+            display: none;
+        }
+
+        .hero {
+            display: flex;
+
+
+            .div-1 {
+                margin-top: 100px;
+
+                h4 {
+                    font-family: 'Manrope', sans-serif;
+                    font-size: 40px;
+                    font-weight: 375;
+                    line-height: 50px;
+                    letter-spacing: 0.05em;
+                }
+
+                h1 {
+                    font-family: 'Manrope', sans-serif;
+                    font-size: 50px;
+                    font-weight: 600;
+                    line-height: 89px;
+                    letter-spacing: 0em;
+                }
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    color: $white;
+                    text-align: left;
+                }
+
+                .button {
+                    display: flex;
+
+                    .btn {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+
+            .hero-r {
+                img {
+                    margin-top: 30px;
+
+                    width: 100%;
+                    height: 500px;
+                    position: relative;
+
+                }
+            }
+
+            .card {
+                margin-top: -10px;
+                background-color: $secondary;
+
+                padding: 20px 0px 20px 100px;
+
+                p {
+                    color: $white;
+                }
+
+                .inner-card {
+                    background-color: $white;
+                    border-radius: 100px;
+                    padding: 10px 0px 0px 50px;
+
+
+                    .search {
+                        width: 60%;
+
+                        label {
+
+                            color: black;
+                            font-family: 'Inter',
+                                sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 32px;
+                            letter-spacing: 0px;
+
+                        }
+
+                        input {
+                            border: 0;
+                            outline: none;
+
+                        }
+                    }
+
+                    .location {
+                        p {
+                            color: black;
+                            font-family: 'Inter', sans-serif;
+
+                            font-weight: 500;
+
+
+                        }
+                    }
+
+                }
+
+                .buttn {
+                    button {
+                        font-family: 'Manrope', sans-serif;
+                        color: $white;
+                        border-radius: 50px;
+                        margin-left: -100px;
+                        padding: 30px 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    main {
+        .heroSection {
+            .bg {
+
+                height: 70vh;
+            }
+
+            .bg-1 {
+                display: block;
+            }
+
+            .bg-2 {
+                display: none;
+            }
+
+            .hero {
+                display: flex;
+                flex-wrap: wrap-reverse;
+
+                .div-1 {
+                    margin-top: 60px;
+
+                    h4 {
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
+
+                    h1 {
+
+                        font-size: 24px;
+                        color: black;
+                        line-height: 29px;
+
+                    }
+
+                    p {
+
+                        color: black;
+                        text-align: left;
+                    }
+
+                    .button {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+
+                        .btn-outline-primary {
+                            color: black !important;
+                        }
+
+                        .btn-outline-primary:hover {
+                            color: #fff !important;
+                        }
+
+                        .btn {
+                            // margin-right: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+
+                .hero-r {
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                        margin-top: 10px;
+                        width: 70%;
+                        height: 240px;
+
+                    }
+                }
+
+                .card {
+                    margin-top: 10px;
+                    padding: 20px 0px 20px 10px;
+
+                    .inner-card {
+                        height: 55px;
+
+                        border-radius: 100px;
+                        padding: 10px 0px 0px 10px;
+
+                        .search {
+                            width: 50%;
+                            height: 50px;
+
+                            label {
+
+                                display: none;
+
+                            }
+
+                            input {
+                                height: 30px;
+
+
+                            }
+                        }
+
+                        .location {
+                            p {
+                                padding-left: 2px !important;
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                        }
+
+                    }
+
+                    .buttn {
+                        border-radius: 100px;
+                        margin-left: 70px;
+
+                        button {
+                            font-family: 'Manrope', sans-serif;
+                            font-size: 15px;
+                            padding: 15px 18px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    main {
+        .heroSection {
+            .bg {
+
+                height: 70vh;
+            }
+
+            .bg-1 {
+                display: none;
+            }
+
+            .bg-2 {
+                display: block;
+            }
+
+            .hero {
+                display: flex;
+                flex-wrap: wrap-reverse;
+
+                .div-1 {
+                    margin-top: 60px;
+
+                    h4 {
+                        font-size: 15px;
+                        line-height: 15px;
+                    }
+
+                    h1 {
+
+                        font-size: 24px;
+                        color: black;
+                        line-height: 29px;
+
+                    }
+
+                    p {
+
+                        color: black;
+                        text-align: left;
+                    }
+
+                    .button {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+
+
+                        .btn-outline-primary {
+                            color: black !important;
+                        }
+
+                        .btn-outline-primary:hover {
+                            color: #fff !important;
+                        }
+
+                        .btn {
+                            // margin-right: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+
+                .hero-r {
+                    img {
+                        margin-top: 10px;
+
+                        width: 100%;
+                        height: 240px;
+
+                    }
+                }
+
+                .card {
+                    margin-top: 10px;
+                    padding: 20px 0px 20px 10px;
+
+                    .inner-card {
+                        height: 55px;
+                        background-color: $white;
+                        border-radius: 100px;
+                        padding: 10px 0px 0px 10px;
+
+                        .search {
+                            width: 50%;
+                            height: 50px;
+
+                            label {
+
+                                display: none;
+
+                            }
+
+                            input {
+                                height: 30px;
+                                // border: 0;
+                                // outline: none;
+                                // line-height: 10px;
+                                // width: 100%;
+                                // font-size: 10px;
+
+                            }
+                        }
+
+                        .location {
+                            p {
+                                padding-left: 2px !important;
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                        }
+
+                    }
+
+                    .buttn {
+                        border-radius: 100px;
+                        margin-left: 70px;
+
+                        button {
+                            font-family: 'Manrope', sans-serif;
+                            font-size: 15px;
+                            padding: 15px 18px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
