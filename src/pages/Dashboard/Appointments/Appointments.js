@@ -57,27 +57,7 @@ export default function Doctors() {
                     </div>
                 </div>
             </div>
-            {/* 
-      <div className="container paginat position-absolute bottom-0 end-0">
-        <div className="row">
-          <div className="col">
-            <ul className="pagination modal-4 float-end">
-              <li><a href="#" className="prev">
-                <i className="fa fa-chevron-left"></i>
-                Previous
-              </a>
-              </li>
-              <li><a href="#">1</a></li>
-              <li> <a href="#">2</a></li>
-              <li> <a href="#" className="active">3</a></li>
-              <li> <a href="#">4</a></li>
-              <li><a href="#" className="next"> Next
-                <i className="fa fa-chevron-right"></i>
-              </a></li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
+           
         </>
 
 

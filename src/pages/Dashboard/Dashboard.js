@@ -5,10 +5,10 @@ import { Input } from 'mdb-ui-kit'; // module
 import 'mdb-ui-kit/css/mdb.min.css';
 import Route from './Route'
 import { useAuthContext } from '../Contaxt/AuthContaxt';
-export default function Dashboard(){
-  const {dispatch}= useAuthContext()
+export default function Dashboard() {
+  const { dispatch } = useAuthContext()
   const HandleLogout = () => {
-    
+
   }
   return (
     <>
@@ -44,11 +44,11 @@ export default function Dashboard(){
                       >
                         <i className="fa-solid fa-user-tie fa-fw me-3"></i><span>Doctors</span>
                       </Link>
-                      <Link to={'/dashboard/Appointments'}
+                      <Link to={'/dashboard/appointments'}
 
                         className="list-group-item list-group-item-action py-2 ripple  text-white"
                       ><i className="fa-solid fa-file-lines fa-fw me-3"></i><span>Appointments</span></Link>
-          
+
                     </div>
                   </div>
                 </nav>
@@ -77,7 +77,7 @@ export default function Dashboard(){
                     </button>
 
                     {/* <!-- Brand --> */}
-                    <Link to={'/'} className="navbar-brand">
+                    <Link to={'/dashboard'} className="navbar-brand">
                       {/* <img
                             src={images.slider3}
                             height="25"
@@ -102,8 +102,8 @@ export default function Dashboard(){
 
                     {/* <!-- Right links --> */}
                     <ul className="navbar-nav ms-auto d-flex flex-row">
-                     
-                     
+
+
 
                       {/* <!-- Avatar --> */}
                       <li className="nav-item dropdown">
